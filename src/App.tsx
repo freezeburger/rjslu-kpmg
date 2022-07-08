@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{FC} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss';
+
+import {ViewLogin} from './views';
+
+/* 
+import { getMessages } from './core/services/message.service';
+getMessages().then(data => console.log(data)) 
+*/
+
+
+const App:FC<{}> = () => {
+  return  (
+
+    <React.Fragment>
+      <h1>App Title</h1>
+      <ViewLogin></ViewLogin>
+    </React.Fragment>
+  ) 
 }
+
+
 
 export default App;
